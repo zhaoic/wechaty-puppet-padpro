@@ -162,13 +162,13 @@ export const generateMiniProgramXMLMessageFromRaw = ({ title, url }: UrlLinkPayl
 			<attachid />
 			<emoticonmd5 />
 			<fileext />
-			<cdnthumburl>30590201000452305002010002043591c1e102032f4f5602041b7ac2dc02045d1dc42d042b777875706c6f61645f383339373434323337394063686174726f6f6d313535325f313536323233313835330204010400030201000400</cdnthumburl>
-			<cdnthumbmd5>505a8043e37721525b04b6b5ce104071</cdnthumbmd5>
-			<cdnthumblength>48115</cdnthumblength>
+			<cdnthumburl>30590201000452305002010002043331cb4802032f4f560204187bc2dc02045d1edcac042b777875706c6f61645f383339373434323337394063686174726f6f6d313733345f313536323330333635390204010400030201000400</cdnthumburl>
+			<cdnthumbmd5>84da5b6cdc3b6d2a49b6bb9a55069a9d</cdnthumbmd5>
+			<cdnthumblength>46381</cdnthumblength>
 			<cdnthumbwidth>720</cdnthumbwidth>
 			<cdnthumbheight>576</cdnthumbheight>
-			<cdnthumbaeskey>db57f89df26242846a1da1adbc9d8291</cdnthumbaeskey>
-			<aeskey>db57f89df26242846a1da1adbc9d8291</aeskey>
+			<cdnthumbaeskey>87e0623fc0f6983d7d1f3139c6e64cc2</cdnthumbaeskey>
+			<aeskey>87e0623fc0f6983d7d1f3139c6e64cc2</aeskey>
 			<encryver>0</encryver>
 			<filekey>8397442379@chatroom1617_1562232039</filekey>
 		</appattach>
