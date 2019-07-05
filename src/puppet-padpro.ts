@@ -1,4 +1,5 @@
 /**
+/**
  *   Wechaty - https://github.com/chatie/wechaty
  *
  *   @copyright 2016-2018 Huan LI <zixia@zixia.net>
@@ -58,8 +59,10 @@ import {
   friendshipReceiveEventMessageParser,
   friendshipVerifyEventMessageParser,
 
-  generateAppXMLMessage,
+  // generateAppXMLMessage,
   generateAttachmentXMLMessageFromRaw,
+  generateMiniProgramXMLMessageFromRaw,
+
 
   imagePayloadParser,
 
@@ -1137,11 +1140,34 @@ export class PuppetPadpro extends Puppet {
     await this.padproManager.shareContactCard(id, contactId)
   }
 
+  // public async messageSendUrl (
+  //   receiver: Receiver,
+  //   urlLinkPayload: UrlLinkPayload
+  // ): Promise<void> {
+  //   log.verbose(PRE, `messageSendLink("${JSON.stringify(receiver)}", ${JSON.stringify(urlLinkPayload)})`)
+  //
+  //   if (!this.padproManager) {
+  //     throw new Error('no padpro manager')
+  //   }
+  //
+  //   // Send to the Room if there's a roomId
+  //   const id = receiver.roomId || receiver.contactId
+  //
+  //   if (!id) {
+  //     throw Error('no id')
+  //   }
+  //
+  //   await this.padproManager.GrpcSendApp(id, generateAppXMLMessage(urlLinkPayload))
+  // }
+
+  //maodou for miniProgram
   public async messageSendUrl (
     receiver: Receiver,
     urlLinkPayload: UrlLinkPayload
   ): Promise<void> {
     log.verbose(PRE, `messageSendLink("${JSON.stringify(receiver)}", ${JSON.stringify(urlLinkPayload)})`)
+
+    console.log("urlLinkPayload",urlLinkPayload)
 
     if (!this.padproManager) {
       throw new Error('no padpro manager')
@@ -1154,7 +1180,7 @@ export class PuppetPadpro extends Puppet {
       throw Error('no id')
     }
 
-    await this.padproManager.GrpcSendApp(id, generateAppXMLMessage(urlLinkPayload))
+    await this.padproManager.GrpcSendApp(id, generateMiniProgramXMLMessageFromRaw(urlLinkPayload))
   }
 
   public async messageForward (
@@ -1257,6 +1283,8 @@ export class PuppetPadpro extends Puppet {
   //   const content = generateLocationMessage(locationPayload)
   //   await this.padproManager.GrpcSendApp(id, content)
   // }
+
+
 
   private async forwardAttachment (
     receiver: Receiver,
