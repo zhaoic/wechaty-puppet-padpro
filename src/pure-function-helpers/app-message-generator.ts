@@ -162,13 +162,13 @@ export const generateMiniProgramXMLMessageFromRaw = ({ title, url }: UrlLinkPayl
 			<attachid />
 			<emoticonmd5 />
 			<fileext />
-			<cdnthumburl>30590201000452305002010002043331cb4802032f4f560204187bc2dc02045d1edcac042b777875706c6f61645f383339373434323337394063686174726f6f6d313733345f313536323330333635390204010400030201000400</cdnthumburl>
-			<cdnthumbmd5>84da5b6cdc3b6d2a49b6bb9a55069a9d</cdnthumbmd5>
-			<cdnthumblength>46381</cdnthumblength>
-			<cdnthumbwidth>720</cdnthumbwidth>
+			<cdnthumburl>305f0201000458305602010002043591c1e102033d0af802045b30feb602045da92c8e04316175706170706d73675f333236306533353932376434343637325f313537313336383037383036355f31303931343136370204010400030201000400</cdnthumburl>
+			<cdnthumbmd5>60bb752bde4b4c598eeb053eadc78ded</cdnthumbmd5>
+			<cdnthumblength>38552</cdnthumblength>
 			<cdnthumbheight>576</cdnthumbheight>
-			<cdnthumbaeskey>87e0623fc0f6983d7d1f3139c6e64cc2</cdnthumbaeskey>
-			<aeskey>87e0623fc0f6983d7d1f3139c6e64cc2</aeskey>
+			<cdnthumbwidth>720</cdnthumbwidth>
+			<cdnthumbaeskey>f77df68350feed12309fd95e71556e0c</cdnthumbaeskey>
+			<aeskey>f77df68350feed12309fd95e71556e0c</aeskey>
 			<encryver>0</encryver>
 			<filekey>8397442379@chatroom1617_1562232039</filekey>
 		</appattach>
@@ -184,7 +184,7 @@ export const generateMiniProgramXMLMessageFromRaw = ({ title, url }: UrlLinkPayl
 			<type>2</type>
 			<version>19</version>
 			<weappiconurl><![CDATA[http://mmbiz.qpic.cn/mmbiz_png/5lFWgxHFPzeu01RyEibY7vb5iceGcpBu9mReAHiaiaoXF7BicEYNSM2HretSX7DUa9CmASvspmiaSPDhIWm4w7nibXlQw/640?wx_fmt=png&wxfrom=200]]></weappiconurl>
-			<pagepath><![CDATA[pages/course/detail/detail.html?id=${url}&userId=5cff40a739b221001136af8a]]></pagepath>
+			<pagepath><![CDATA[pages/course/detail/detail.html?id=${url}&userId=5d09f71a42988b00126ff1bc]]></pagepath>
 			<shareId><![CDATA[0_wxe638e634ed8b3907_898744801_1562231852_0]]></shareId>
 			<appservicetype>0</appservicetype>
 		</weappinfo>
